@@ -104,13 +104,4 @@ export const projectStack = [
       SiExpress,
     ],
   },
-  // {
-  //   id: 3,
-  //   name: "Eco Restaurant",
-  //   img: ecoRestaurant,
-  //   description:
-  //     "A sustainable restaurant website design that highlights eco-friendly practices and menu options.",
-  //   // link: "https://www.behance.net/gallery/233077347/Furniture-e-commerce-web-design",
-  //   icons: [SiFigma, RiReactjsLine, RiTailwindCssFill],
-  // },
 ];

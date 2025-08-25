@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import me from "../assets/me.png";
 import Navbar from "../components/Navbar";
 import Kooshin from "../assets/Kooshin.jpeg";
@@ -8,12 +8,13 @@ import ProjectCard from "../components/ProjectCard";
 import { projectStack } from "../constant/data";
 
 const HomePage = () => {
+  const [emailMessage, setEmailMessage] = useState("");
   return (
     <>
       <div>
         <div className="">
           <div className="mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col md:flex-row justify-between items-center gap-12">
-            <div className="text-center md:text-left max-w-xl">
+            <div className="text-start md:text-left max-w-xl">
               <span className="text-xl leading-loose md:leading-loose md:text-2xl font-light px-2 rounded-md text-gray-600 border-4 border-blue-500">
                 I'm
               </span>
@@ -45,7 +46,7 @@ const HomePage = () => {
                 and user-friendly applications.
               </p>
 
-              <div className="mt-6 flex flex-row sm:flex-row gap-4 justify-center md:justify-start">
+              <div className="mt-6 flex flex-row sm:flex-row gap-4 justify-start md:justify-start">
                 <Link
                   to="/projects"
                   className="px-4 py-2 md:px-6 md:py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
@@ -54,7 +55,7 @@ const HomePage = () => {
                 </Link>
                 <Link
                   to="/contact"
-                  className="px-4 py-2 md:px-6 md:py-3 border border-blue-500 text-blue-500 rounded-lg shadow hover:bg-blue-200 transition"
+                  className="px-4 py-2 md:px-6 md:py-3 border border-blue-500 text-blue-500 rounded-lg shadow hover:bg-blue-50 transition"
                 >
                   Contact Me
                 </Link>
@@ -116,7 +117,7 @@ const HomePage = () => {
                   />
                 </svg>
               </h3>
-              <p className="sm:text-lg text-gray-600 text-center max-w-4xl text-base leading-relaxed md:text-start">
+              <p className="sm:text-lg text-gray-600 text-start max-w-4xl text-base leading-relaxed md:text-start">
                 Hello! I'm Abdirahman Kooshin, a dedicated Full-Stack Developer
                 with a passion for creating dynamic and responsive web
                 applications. My expertise lies in the MERN stack (MongoDB,
@@ -149,14 +150,18 @@ const HomePage = () => {
           <h3 className="font-meduim text-center mb-12 text-blue-500">
             Like what you see? Let's work together!
           </h3>
-          <div className="flex justify-center items-center md:flex-row gap-6 md:justify-center md:items-center">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
             <input
-              type="email"
-              placeholder="Your Email"
-              className="px-4 py-2 outline-none border border-gray-300 md:px-14 md:py-2 rounded-lg focus:ring-1 focus:ring-blue-500 transition"
+              type="text"
+              value={emailMessage}
+              onChange={(e) => setEmailMessage(e.target.value)}
+              placeholder="Write your message..."
+              className="px-4 py-2 outline-none border border-gray-300 md:px-14 md:py-2 rounded-lg focus:ring-1 focus:ring-blue-500 transition w-full sm:w-auto"
             />
             <Link
-              to="/contact"
+              to={`mailto:mankajr11@gmail.com?subject=Message from Portfolio&body=${encodeURIComponent(
+                emailMessage
+              )}`}
               className="px-4 py-2 md:px-6 md:py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
             >
               Reach Me

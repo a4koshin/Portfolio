@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { FaGithub } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
+import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
     <div className="border-t-2 mx-auto max-w-7xl px-4 mt-16 rounded-2xl">
@@ -26,6 +27,14 @@ const Footer = () => {
           >
             <ImLinkedin />
           </Link>
+          <a
+            href="mailto:mankajr11@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl"
+          >
+            <MdEmail />
+          </a>
         </div>
       </div>
     </div>

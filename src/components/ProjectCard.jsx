@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
         rel="noopener noreferrer"
         className="block"
       >
-        <div className="rounded-lg  overflow-hidden">
+        <div className="rounded-lg outline outline-gray-100 overflow-hidden">
           <img
             src={project.img}
             alt={project.name}
