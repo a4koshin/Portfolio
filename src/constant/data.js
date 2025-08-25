@@ -2,6 +2,15 @@ import React from "react";
 import { RiReactjsLine } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { RiSupabaseFill } from "react-icons/ri";
+import caalamiWeb from "../assets/caalamiWeb.jpg";
+import furniture from "../assets/furniture.jpg";
+import taskmanagement from "../assets/taskmanagement.png";
+import ecoRestaurant from "../assets/eco-restaurant.png";
+import { SiFigma } from "react-icons/si";
+import { RiNodejsLine } from "react-icons/ri";
+import { SiMongodb } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+
 export const navigation = [
   { id: 0, name: "Home", href: "/" },
   { id: 1, name: "About me", href: "/about" },
@@ -58,8 +67,50 @@ export const projectStack = [
   {
     id: 0,
     name: "Caalami Group",
+    img: caalamiWeb,
     description:
       " A comprehensive web application for managing and showcasing the activities of Caalami Group.",
-    icons: [RiReactjsLine, RiTailwindCssFill, RiSupabaseFill],
+    link: "https://caalamigroup.com/",
+    icons: [SiFigma, RiReactjsLine, RiTailwindCssFill, RiSupabaseFill],
   },
+  {
+    id: 1,
+    name: "Furniture E-commerce",
+    img: furniture,
+    description:
+      "A modern and responsive e-commerce website design for a furniture store, focusing on user experience and visual appeal.",
+    link: "https://www.behance.net/gallery/233077347/Furniture-e-commerce-web-design",
+    icons: [
+      SiFigma,
+      RiReactjsLine,
+      RiTailwindCssFill,
+      RiNodejsLine,
+      SiMongodb,
+      SiExpress,
+    ],
+  },
+  {
+    id: 2,
+    name: "Task Management web-App",
+    img: taskmanagement,
+    description:
+      "A task management web application that helps users organize, prioritize, and track their tasks efficiently.",
+    icons: [
+      SiFigma,
+      RiReactjsLine,
+      RiTailwindCssFill,
+      RiNodejsLine,
+      SiMongodb,
+      SiExpress,
+    ],
+  },
+  // {
+  //   id: 3,
+  //   name: "Eco Restaurant",
+  //   img: ecoRestaurant,
+  //   description:
+  //     "A sustainable restaurant website design that highlights eco-friendly practices and menu options.",
+  //   // link: "https://www.behance.net/gallery/233077347/Furniture-e-commerce-web-design",
+  //   icons: [SiFigma, RiReactjsLine, RiTailwindCssFill],
+  // },
 ];

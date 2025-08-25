@@ -1,23 +1,36 @@
 import React from "react";
-import caalamiWeb from "../assets/caalamiWeb.jpg";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="border-2 border-gray-300 p-4 w-80 rounded-lg text-center">
-      <div className="rounded-lg shadow-2xl overflow-hidden">
-        <img
-          src={caalamiWeb}
-          alt={project.name}
-          className="w-80 h-auto hover:scale-105 transition-transform"
-        />
+    <div className="outline outline-gray-300 p-4 w-80 h-[450px] flex flex-col justify-between rounded-lg">
+      {/* Project Link with Image */}
+      <Link
+        to={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block"
+      >
+        <div className="rounded-lg  overflow-hidden">
+          <img
+            src={project.img}
+            alt={project.name}
+            className="w-full h-48 object-cover hover:scale-105 transition-transform"
+          />
+        </div>
+      </Link>
+
+      {/* Text Section */}
+      <div className="text-start px-2 flex-grow">
+        <h3 className="text-lg font-semibold mt-4">{project.name}</h3>
+        <p className="text-sm text-gray-600 mt-2 line-clamp-3">
+          {project.description}
+        </p>
       </div>
 
-      <h3 className="text-lg font-semibold mt-6">{project.name}</h3>
-      <p className="text-sm text-gray-600 mt-4">{project.description}</p>
-
       {/* Tech Stack Icons */}
-      <div className="bg-blue-500 rounded-md mt-4 p-2">
-        <span className="flex justify-center gap-4 text-2xl text-white">
+      <div className=" rounded-md mt-4 p-2">
+        <span className="flex justify-center gap-4 text-2xl text-gray-900">
           {project.icons.map((Icon, index) => (
             <Icon key={index} className="w-8 h-8" />
           ))}

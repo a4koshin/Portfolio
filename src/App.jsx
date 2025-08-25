@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -7,14 +8,17 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 const App = () => {
   return (
-    <div className="min-h-screen bg-blue-50 ">
+    <div className="min-h-screen  ">
       <Navbar />
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 };

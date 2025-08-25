@@ -10,8 +10,8 @@ import { projectStack } from "../constant/data";
 const HomePage = () => {
   return (
     <>
-      <div className="bg-blue-50">
-        <div className="p-4">
+      <div>
+        <div className="">
           <div className="mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="text-center md:text-left max-w-xl">
               <span className="text-xl leading-loose md:leading-loose md:text-2xl font-light px-2 rounded-md text-gray-600 border-4 border-blue-500">
@@ -85,8 +85,11 @@ const HomePage = () => {
         </div>
       </div>
       {/* ABout section */}
-      <div className="bg-gray-50 py-16">
+      <div className="mb-16">
         <div className="mx-auto max-w-7xl px-4">
+          <h3 className="font-meduim text-center mb-12 text-blue-500">
+            About me
+          </h3>
           <div className="mt-12 flex flex-col md:flex-row md:space-x-10 justify-around items-start gap-12">
             {/* Left image */}
             <div className="self-center">
@@ -98,8 +101,8 @@ const HomePage = () => {
             </div>
 
             <div className=" mt-0 md:mt-24">
-              <h3 className="relative inline-block font-semibold text-3xl md:text-6xl  text-start mb-6 text-blue-500">
-                About Me
+              <h3 className="relative inline-block font-semibold text-3xl md:text-5xl  text-start mb-6 text-blue-500">
+                Who I Am
                 <svg
                   className="absolute -bottom-1 left-0 w-full h-2"
                   viewBox="0 0 100 10"
@@ -113,7 +116,7 @@ const HomePage = () => {
                   />
                 </svg>
               </h3>
-              <p className="sm:text-lg text-gray-600 text-start max-w-4xl text-base leading-relaxed">
+              <p className="sm:text-lg text-gray-600 text-center max-w-4xl text-base leading-relaxed md:text-start">
                 Hello! I'm Abdirahman Kooshin, a dedicated Full-Stack Developer
                 with a passion for creating dynamic and responsive web
                 applications. My expertise lies in the MERN stack (MongoDB,
@@ -129,15 +132,35 @@ const HomePage = () => {
         </div>
       </div>
       {/* Some projects */}
-      <div className="bg-blue-50 py-16">
+      <div className=" mb-16">
         <div className="mx-auto max-w-7xl px-4">
-          <div className=" flex flex-col md:flex-row md:space-x-10 justify-around items-start gap-12">
-            <h3 className="font-meduim text-start mb-6 text-blue-500">
-              Projects
-            </h3>
+          <h3 className="font-meduim text-center mb-12 text-blue-500">
+            Projects
+          </h3>
+          <div className=" flex flex-col  justify-center items-center md:flex-row md:space-x-20   gap-12">
             {projectStack.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="mb-16">
+        <div className="mx-auto max-w-7xl px-4 text-center">
+          <h3 className="font-meduim text-center mb-12 text-blue-500">
+            Like what you see? Let's work together!
+          </h3>
+          <div className="flex justify-center items-center md:flex-row gap-6 md:justify-center md:items-center">
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="px-4 py-2 outline-none border border-gray-300 md:px-14 md:py-2 rounded-lg focus:ring-1 focus:ring-blue-500 transition"
+            />
+            <Link
+              to="/contact"
+              className="px-4 py-2 md:px-6 md:py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
+            >
+              Reach Me
+            </Link>
           </div>
         </div>
       </div>

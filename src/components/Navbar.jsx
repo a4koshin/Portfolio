@@ -12,9 +12,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative z-50 mx-auto max-w-7xl px-4 flex items-center justify-between py-4 mb-4 bg-blue-50">
-      <Link to={"/"} className="flex items-center">
-        <img src={logo} alt="Logo" className="h-20 w-20 rounded-full" />
+    <nav className="relative z-50 mx-auto max-w-7xl px-4 flex items-center justify-between">
+      <Link
+        to={"/"}
+        onClick={() => setIsOpen(false)}
+        className="flex items-center"
+      >
+        <img src={logo} alt="Logo" className="h-24 w-24 rounded-full" />
       </Link>
 
       <div className="hidden md:flex items-center space-x-6">
@@ -47,6 +51,7 @@ const Navbar = () => {
             <NavLink
               key={item.id}
               to={item.href}
+              onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
                 isActive
                   ? "text-md font-medium text-blue-500 underline underline-offset-6"
