@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Kooshin from "../assets/kooshin.jpeg";
+import kooshin from "../assets/kooshin.jpeg";
 const AboutPage = () => {
   const [selectedTab, setSelectedTab] = useState("Profile");
 
@@ -97,7 +97,7 @@ const AboutPage = () => {
       <div className="flex flex-col md:flex-row items-center gap-40">
         <div className="self-center">
           <img
-            src={Kooshin}
+            src={kooshin}
             alt="kooshin"
             className="w-80 h-auto md:w-[20rem] rounded-3xl mx-auto mb-6 md:mb-0"
           />
