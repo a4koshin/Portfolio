@@ -158,14 +158,14 @@ const HomePage = () => {
               placeholder="Write your message..."
               className="px-4 py-2 outline-none border border-gray-300 md:px-14 md:py-2 rounded-lg focus:ring-1 focus:ring-blue-500 transition w-full sm:w-auto"
             />
-            <Link
-              to={`mailto:mankajr11@gmail.com?subject=Message from Portfolio&body=${encodeURIComponent(
-                emailMessage
+            <a
+              href={`mailto:mankajr11@gmail.com?subject=Opportunity%20to%20Connect%20–%20Saw%20Your%20Portfolio&body=${encodeURIComponent(
+                `Hello Kooshin, I came across your portfolio and would like to connect with you.`
               )}`}
               className="px-4 py-2 md:px-6 md:py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
             >
               Reach Me
-            </Link>
+            </a>
           </div>
         </div>
       </div>
