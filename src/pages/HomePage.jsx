@@ -144,7 +144,7 @@ const HomePage = () => {
           <h3 className="font-meduim text-center mb-12 text-blue-500">
             Projects
           </h3>
-          <div className=" flex flex-col  justify-center items-center md:flex-row md:space-x-20   gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
             {projectStack.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}

@@ -15,6 +15,7 @@ import { SiPython, SiMysql } from "react-icons/si";
 import caalamiWeb from "../assets/caalamiWeb.jpg";
 import furniture from "../assets/furniture.jpg";
 import taskmanagement from "../assets/taskmanagement.png";
+import giovanco from "../assets/Giovanco.png";
 
 // Navigation
 export const navigation = [
@@ -57,6 +58,22 @@ export const projectStack = [
     description:
       "A modern and responsive e-commerce website design for a furniture store, focusing on user experience and visual appeal.",
     link: "https://www.behance.net/gallery/233077347/Furniture-e-commerce-web-design",
+    icons: [
+      SiFigma,
+      RiReactjsLine,
+      RiTailwindCssFill,
+      RiNodejsLine,
+      SiMongodb,
+      SiExpress,
+    ],
+  },
+  {
+    id: 3,
+    name: "Giovanco E-commerce",
+    img: giovanco,
+    description:
+      "A modern and responsive e-commerce website design, focusing on user experience and visual appeal.",
+    // link: "https://www.behance.net/gallery/233077347/Furniture-e-commerce-web-design",
     icons: [
       SiFigma,
       RiReactjsLine,
