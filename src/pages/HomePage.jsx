@@ -166,7 +166,7 @@ const HomePage = () => {
             />
             <a
               href={`mailto:mankajr11@gmail.com?subject=Opportunity%20to%20Connect%20–%20Saw%20Your%20Portfolio&body=${encodeURIComponent(
-                `Hello Kooshin, I came across your portfolio and would like to connect with you.`
+                emailMessage
               )}`}
               className="px-4 py-2 md:px-6 md:py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
             >
