@@ -1,16 +1,22 @@
 import React from "react";
-import { RiReactjsLine } from "react-icons/ri";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { RiSupabaseFill } from "react-icons/ri";
-import { SiFigma } from "react-icons/si";
-import { RiNodejsLine } from "react-icons/ri";
-import { SiMongodb } from "react-icons/si";
-import { SiExpress } from "react-icons/si";
-import { SiPython } from "react-icons/si";
+// React Icons
+import {
+  RiReactjsLine,
+  RiTailwindCssFill,
+  RiSupabaseFill,
+  RiNodejsLine,
+} from "react-icons/ri";
+import { SiFigma, SiMongodb, SiExpress, SiPostgresql } from "react-icons/si";
+import { FaGitAlt, FaGithub } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { SiPython, SiMysql } from "react-icons/si";
+
+// Project images
 import caalamiWeb from "../assets/caalamiWeb.jpg";
 import furniture from "../assets/furniture.jpg";
 import taskmanagement from "../assets/taskmanagement.png";
 
+// Navigation
 export const navigation = [
   { id: 0, name: "Home", href: "/" },
   { id: 1, name: "About me", href: "/about" },
@@ -18,58 +24,29 @@ export const navigation = [
   { id: 3, name: "Contact", href: "/contact" },
 ];
 
+// Tech Stack
 export const techStack = [
-  {
-    id: 0,
-    name: "Figma",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-  },
-
-  {
-    id: 1,
-    name: "React",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  },
-  {
-    id: 2,
-    name: "Node.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  },
-  {
-    id: 3,
-    name: "Express.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-  },
-  {
-    id: 4,
-    name: "MongoDB",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-  },
-
-  {
-    id: 8,
-    name: "Git",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-  },
-  {
-    id: 9,
-    name: "GitHub",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-  },
-  {
-    id: 13,
-    name: "SQL Server",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg",
-  },
+  { id: 0, name: "Figma", icon: SiFigma },
+  { id: 12, name: "Python", icon: SiPython },
+  { id: 1, name: "React", icon: RiReactjsLine },
+  { id: 2, name: "Node.js", icon: RiNodejsLine },
+  { id: 3, name: "Express.js", icon: SiExpress },
+  { id: 4, name: "MongoDB", icon: SiMongodb },
+  { id: 8, name: "Git", icon: FaGitAlt },
+  { id: 9, name: "GitHub", icon: FaGithub },
+  { id: 10, name: "Spring Boot", icon: BiLogoSpringBoot },
+  { id: 13, name: "MySQL", icon: SiMysql },
+  { id: 11, name: "SQL Server", icon: SiPostgresql },
 ];
 
+// Project Stack
 export const projectStack = [
   {
     id: 0,
     name: "Caalami Group",
     img: caalamiWeb,
     description:
-      " A comprehensive web application for managing and showcasing the activities of Caalami Group.",
+      "A comprehensive web application for managing and showcasing the activities of Caalami Group.",
     link: "https://caalamigroup.com/",
     icons: [SiFigma, RiReactjsLine, RiTailwindCssFill, RiSupabaseFill],
   },
@@ -91,7 +68,7 @@ export const projectStack = [
   },
   {
     id: 2,
-    name: "Task Management web-App",
+    name: "Task Management Web-App",
     img: taskmanagement,
     description:
       "A task management web application that helps users organize, prioritize, and track their tasks efficiently.",

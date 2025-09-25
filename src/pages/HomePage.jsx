@@ -74,14 +74,15 @@ const HomePage = () => {
               Special Stacks
             </h3>
             <div className="mt-6 flex flex-wrap gap-4 justify-center md:flex-row md:justify-center md:mx-auto max-w-7xl px-4 md:space-x-16 brightness-0 opacity-40">
-              {techStack.map((tech) => (
-                <img
-                  src={tech.icon}
-                  alt={tech.name}
-                  className="w-10 h-10 md:w-20 md:h-20"
-                  key={tech.id}
-                />
-              ))}
+              {techStack.map((tech) => {
+                const Icon = tech.icon; // ✅ get the React Icon component
+                return (
+                  <div key={tech.id} className="w-10 h-10 md:w-20 md:h-20">
+                    <Icon className="w-full h-full" />{" "}
+                    {/* render as component */}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
