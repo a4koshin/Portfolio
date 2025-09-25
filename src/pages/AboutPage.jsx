@@ -20,7 +20,9 @@ const AboutPage = () => {
         </span>
         , <span className="font-semibold">Python</span>,{" "}
         <span className="font-semibold">C#</span>, and{" "}
-        <span className="font-semibold">Spring Boot with SQL Databses.</span>{" "}
+        <span className="font-semibold">
+          Spring Boot with SQL Databses(PostgreSQL & mySQL).
+        </span>{" "}
       </p>
 
       <p>
