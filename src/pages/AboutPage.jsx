@@ -18,8 +18,9 @@ const AboutPage = () => {
         <span className="font-medium">
           MERN stack (MongoDB, Express.js, React.js, Node.js)
         </span>
-        ,<span className="font-medium"> Spring Boot</span>, and{" "}
-        <span className="font-medium">C# with SQL Server</span>.
+        , <span className="font-medium">Spring Boot</span>,{" "}
+        <span className="font-medium">C# with SQL Server</span>, and{" "}
+        <span className="font-medium">Python</span>.
       </p>
 
       <p>
