@@ -54,7 +54,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
                 isActive
-                  ? "text-md font-medium text-blue-500 underline underline-offset-6"
+                  ? "text-md font-medium bg-blue-500 px-6 py-2 rounded-md text-white"
                   : "text-md font-medium text-gray-600 hover:text-blue-500"
               }
             >
