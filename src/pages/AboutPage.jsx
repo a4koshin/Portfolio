@@ -15,19 +15,19 @@ const AboutPage = () => {
         and Technology (Expected Graduation: 2026). I specialize in developing
         modern, scalable, and user-focused applications using technologies such
         as the{" "}
-        <span className="font-medium">
+        <span className="font-semibold">
           MERN stack (MongoDB, Express.js, React.js, Node.js)
         </span>
-        , <span className="font-medium">Spring Boot</span>,{" "}
-        <span className="font-medium">C# with SQL Server</span>, and{" "}
-        <span className="font-medium">Python</span>.
+        , <span className="font-semibold">Python</span>,{" "}
+        <span className="font-semibold">C#</span>, and{" "}
+        <span className="font-semibold">Spring Boot with SQL Databses.</span>{" "}
       </p>
 
       <p>
         In addition to development, I’m deeply passionate about
-        <span className="font-medium"> UI/UX design</span>, crafting intuitive,
-        clean, and engaging interfaces with tools like{" "}
-        <span className="font-medium">
+        <span className="font-semibold"> UI/UX design</span>, crafting
+        intuitive, clean, and engaging interfaces with tools like{" "}
+        <span className="font-semibold">
           Figma, Adobe Creative Suite, and Tailwind CSS
         </span>
         . My ability to work across both design and development allows me to
@@ -36,7 +36,7 @@ const AboutPage = () => {
 
       <p>
         I’m also expanding my knowledge in{" "}
-        <span className="font-medium">
+        <span className="font-semibold">
           Python, Artificial Intelligence (AI), and Machine Learning (ML)
         </span>
         , with the goal of integrating intelligent features into future

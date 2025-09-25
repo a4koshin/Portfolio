@@ -121,13 +121,17 @@ const HomePage = () => {
               <p className="sm:text-lg text-gray-600 text-start max-w-4xl text-base leading-relaxed md:text-start">
                 Hello! I'm Abdirahman Kooshin, a dedicated Full-Stack Developer
                 with a passion for creating dynamic and responsive web
-                applications. My expertise lies in the MERN stack (MongoDB,
-                Express.js, React, Node.js), Python language, C# with SQL
-                Server, and Spring Boot I thrive on turning complex problems
-                into elegant solutions and am always eager to learn new
-                technologies and improve my skills. When I'm not coding, I enjoy
-                exploring design trends and enhancing user experiences. Let's
-                build something amazing together!
+                applications. My expertise lies in the{" "}
+                <span className="font-semibold">
+                  MERN stack (MongoDB, Express.js, React, Node.js), Python
+                  language, C# and Spring Boot with SQL databases Like
+                  PostgreSQL mySQL.
+                </span>{" "}
+                I thrive on turning complex problems into elegant solutions and
+                am always eager to learn new technologies and improve my skills.
+                When I'm not coding, I enjoy exploring design trends and
+                enhancing user experiences. Let's build something amazing
+                together!
               </p>
             </div>
           </div>

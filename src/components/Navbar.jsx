@@ -46,7 +46,7 @@ const Navbar = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute top-20 left-0 w-full h-80 bg-white/30 backdrop-blur-lg p-4 flex flex-col items-center space-y-4 md:hidden shadow-md z-40 rounded-b-2xl">
+        <div className="absolute top-20 right-0 w-60 h-80 bg-white/30 backdrop-blur-lg p-4 flex flex-col items-center space-y-4 md:hidden shadow-md z-40 rounded-b-2xl">
           {navigation.map((item) => (
             <NavLink
               key={item.id}
