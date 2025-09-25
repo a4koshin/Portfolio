@@ -2,14 +2,14 @@ import React from "react";
 import { RiReactjsLine } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { RiSupabaseFill } from "react-icons/ri";
-import caalamiWeb from "../assets/caalamiWeb.jpg";
-import furniture from "../assets/furniture.jpg";
-import taskmanagement from "../assets/taskmanagement.png";
-import ecoRestaurant from "../assets/eco-restaurant.png";
 import { SiFigma } from "react-icons/si";
 import { RiNodejsLine } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
+import { SiPython } from "react-icons/si";
+import caalamiWeb from "../assets/caalamiWeb.jpg";
+import furniture from "../assets/furniture.jpg";
+import taskmanagement from "../assets/taskmanagement.png";
 
 export const navigation = [
   { id: 0, name: "Home", href: "/" },
@@ -22,7 +22,7 @@ export const techStack = [
   {
     id: 0,
     name: "Figma",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
 
   {

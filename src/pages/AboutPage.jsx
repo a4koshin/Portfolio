@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Kooshin from "../assets/kooshin.jpeg";
+import Kooshin from "../assets/Kooshin.jpeg";
+
 const AboutPage = () => {
   const [selectedTab, setSelectedTab] = useState("Profile");
 

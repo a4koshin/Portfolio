@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import me from "../assets/me.png";
 import Navbar from "../components/Navbar";
 import Kooshin from "../assets/Kooshin.jpeg";
+import Button from "../components/Button";
 import { Link } from "react-router-dom";
 import { techStack } from "../constant/data";
 import ProjectCard from "../components/ProjectCard";
@@ -121,12 +122,12 @@ const HomePage = () => {
                 Hello! I'm Abdirahman Kooshin, a dedicated Full-Stack Developer
                 with a passion for creating dynamic and responsive web
                 applications. My expertise lies in the MERN stack (MongoDB,
-                Express.js, React, Node.js), Spring Boot, and C# with SQL
-                Server. I thrive on turning complex problems into elegant
-                solutions and am always eager to learn new technologies and
-                improve my skills. When I'm not coding, I enjoy exploring design
-                trends and enhancing user experiences. Let's build something
-                amazing together!
+                Express.js, React, Node.js), Python language, C# with SQL
+                Server, and Spring Boot I thrive on turning complex problems
+                into elegant solutions and am always eager to learn new
+                technologies and improve my skills. When I'm not coding, I enjoy
+                exploring design trends and enhancing user experiences. Let's
+                build something amazing together!
               </p>
             </div>
           </div>
