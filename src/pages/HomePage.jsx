@@ -73,13 +73,13 @@ const HomePage = () => {
             <h3 className="font-medium text-gray-500 text-center mt-10">
               Special Stacks
             </h3>
-            <div className="mt-6 flex flex-wrap  justify-center md:flex-row md:justify-center md:mx-auto max-w-7xl px-4 md:space-x-16 brightness-0 opacity-40">
+            <div className="mt-6 flex flex-wrap gap-2 justify-center md:flex-row md:justify-center md:mx-auto max-w-7xl px-4 md:space-x-16 brightness-0 opacity-40">
               {techStack.map((tech) => {
-                const Icon = tech.icon; // ✅ get the React Icon component
+                const Icon = tech.icon; 
                 return (
                   <div key={tech.id} className="w-10 h-10 md:w-12 md:h-12">
                     <Icon className="w-full h-full" />{" "}
-                    {/* render as component */}
+                  
                   </div>
                 );
               })}
@@ -139,7 +139,7 @@ const HomePage = () => {
         </div>
       </div>
       {/* Some projects */}
-      <div className=" mb-16">
+      <div className=" mb-36">
         <div className="mx-auto max-w-7xl px-4">
           <h3 className="font-meduim text-center mb-12 text-blue-500">
             Projects
