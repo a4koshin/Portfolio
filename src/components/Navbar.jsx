@@ -18,26 +18,12 @@ const Navbar = () => {
         onClick={() => setIsOpen(false)}
         className="flex items-center"
       >
-        <img src={logo} alt="Logo" className="h-24 w-24 rounded-full" />
+        <img src={logo} alt="Logo" className="h-32 w-32 rounded-full" />
       </Link>
 
-      <div className="hidden md:flex items-center space-x-6">
-        {navigation.map((item) => (
-          <NavLink
-            key={item.id}
-            to={item.href}
-            className={({ isActive }) =>
-              isActive
-                ? "text-md font-medium text-blue-500 underline underline-offset-8"
-                : "text-md font-medium text-gray-600 hover:text-blue-500"
-            }
-          >
-            {item.name}
-          </NavLink>
-        ))}
-      </div>
+     
 
-      <button className="md:hidden relative z-50" onClick={toggleMenuHandler}>
+      <button className=" relative z-50" onClick={toggleMenuHandler}>
         {isOpen ? (
           <HiOutlineMinus className="size-8 text-gray-800" />
         ) : (
@@ -46,7 +32,7 @@ const Navbar = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute top-20 right-0 w-60 h-80 bg-white/30 backdrop-blur-lg p-4 flex flex-col items-center space-y-4 md:hidden shadow-md z-40 rounded-b-2xl">
+        <div className="absolute top-20 right-0 w-60 h-80 bg-white/30 backdrop-blur-lg p-4 flex flex-col items-center space-y-4  shadow-md z-40 rounded-b-2xl">
           {navigation.map((item) => (
             <NavLink
               key={item.id}

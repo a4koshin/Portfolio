@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import me from "../assets/me.png";
 import Navbar from "../components/Navbar";
-import Kooshin from "../assets/Kooshin.jpeg";
+import Kooshin from "../assets/kooshin.png";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
 import { techStack } from "../constant/data";
@@ -12,8 +12,8 @@ const HomePage = () => {
   const [emailMessage, setEmailMessage] = useState("");
   return (
     <>
-      <div>
-        <div className="">
+      <div className="mb-32">
+        <div className="mx-auto max-w-7xl px-4">
           <div className="mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col md:flex-row justify-between items-center gap-12">
             <div className="text-start md:text-left max-w-xl">
               <span className="text-xl leading-loose md:leading-loose md:text-2xl font-light px-2 rounded-md text-gray-600 border-4 border-blue-500">
@@ -63,8 +63,8 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="p-4 rounded-full  z-10 overflow-hidden inline-block">
-              <img src={me} alt="me" className="rounded-full object-cover" />
+            <div className=" z-10 inline-block">
+              <img src={me} alt="me" className="rounded-full md:ml-40 object-cover  " />
             </div>
           </div>
 
@@ -73,11 +73,11 @@ const HomePage = () => {
             <h3 className="font-medium text-gray-500 text-center mt-10">
               Special Stacks
             </h3>
-            <div className="mt-6 flex flex-wrap gap-4 justify-center md:flex-row md:justify-center md:mx-auto max-w-7xl px-4 md:space-x-16 brightness-0 opacity-40">
+            <div className="mt-6 flex flex-wrap  justify-center md:flex-row md:justify-center md:mx-auto max-w-7xl px-4 md:space-x-16 brightness-0 opacity-40">
               {techStack.map((tech) => {
                 const Icon = tech.icon; // ✅ get the React Icon component
                 return (
-                  <div key={tech.id} className="w-10 h-10 md:w-20 md:h-20">
+                  <div key={tech.id} className="w-10 h-10 md:w-12 md:h-12">
                     <Icon className="w-full h-full" />{" "}
                     {/* render as component */}
                   </div>
@@ -88,7 +88,7 @@ const HomePage = () => {
         </div>
       </div>
       {/* ABout section */}
-      <div className="mb-16">
+      <div className="mb-24">
         <div className="mx-auto max-w-7xl px-4">
           <h3 className="font-meduim text-center mb-12 text-blue-500">
             About me
