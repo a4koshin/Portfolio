@@ -18,10 +18,12 @@ const Navbar = () => {
         onClick={() => setIsOpen(false)}
         className="flex items-center"
       >
-        <img src={logo} alt="Logo" className="w-24 h-24 md:h-32 md:w-32 rounded-full" />
+        <img
+          src={logo}
+          alt="Logo"
+          className="w-24 h-24 md:h-32 md:w-32 rounded-full"
+        />
       </Link>
-
-     
 
       <button className=" relative z-50" onClick={toggleMenuHandler}>
         {isOpen ? (

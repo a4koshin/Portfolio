@@ -64,7 +64,11 @@ const HomePage = () => {
             </div>
 
             <div className=" z-10 inline-block">
-              <img src={me} alt="me" className="rounded-full md:ml-40 object-cover  " />
+              <img
+                src={me}
+                alt="me"
+                className="rounded-full md:ml-40 object-cover  "
+              />
             </div>
           </div>
 
@@ -75,11 +79,10 @@ const HomePage = () => {
             </h3>
             <div className="mt-6 flex flex-wrap gap-2 justify-center md:flex-row md:justify-center md:mx-auto max-w-7xl px-4 md:space-x-16 brightness-0 opacity-40">
               {techStack.map((tech) => {
-                const Icon = tech.icon; 
+                const Icon = tech.icon;
                 return (
                   <div key={tech.id} className="w-10 h-10 md:w-12 md:h-12">
                     <Icon className="w-full h-full" />{" "}
-                  
                   </div>
                 );
               })}
@@ -151,24 +154,28 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="mb-16">
-        <div className="mx-auto max-w-7xl px-4 text-center">
-          <h3 className="font-meduim text-center mb-12 text-blue-500">
+      <div className="mb-16 bg-blue-500 px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="text-xl font-bold text-white text-center mb-4 sm:text-2xl sm:mb-6 md:text-4xl">
             Like what you see? Let's work together!
-          </h3>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
+          </h2>
+          <p className="text-base text-blue-100 text-center mb-6 max-w-2xl mx-auto sm:text-lg sm:mb-8 md:text-xl">
+            I'm always excited to take on new challenges and collaborate on
+            innovative projects.
+          </p>
+          <div className="flex flex-col justify-center items-center gap-3 sm:flex-row sm:gap-4 md:gap-6">
             <input
               type="text"
               value={emailMessage}
               onChange={(e) => setEmailMessage(e.target.value)}
               placeholder="Write your message..."
-              className="px-4 py-2 outline-none border border-gray-300 md:px-14 md:py-2 rounded-lg focus:ring-1 focus:ring-blue-500 transition w-full sm:w-auto"
+              className="px-4 py-2 outline-none border border-gray-300 rounded-lg focus:ring-1 focus:ring-white transition w-full max-w-md sm:max-w-none sm:w-auto md:px-6 md:py-3"
             />
             <a
               href={`mailto:mankajr11@gmail.com?subject=Opportunity%20to%20Connect%20–%20Saw%20Your%20Portfolio&body=${encodeURIComponent(
                 emailMessage
               )}`}
-              className="px-4 py-2 md:px-6 md:py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
+              className="px-6 py-2 bg-white text-blue-600 rounded-lg shadow hover:bg-gray-100 transition w-full text-center sm:w-auto md:px-8 md:py-3"
             >
               Reach Me
             </a>
