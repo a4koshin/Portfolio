@@ -16,7 +16,7 @@ const HomePage = () => {
         <div className="mx-auto max-w-7xl px-4">
           <div className="relative mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col justify-center items-center gap-12">
             <div className="text-center max-w-2xl mx-auto">
-              <h1 className="text-2xl md:text-5xl font-semibold mt-4">
+              <h1 className="text-2xl md:text-5xl font-bold mt-4">
                 <span className="text-xl leading-loose md:leading-loose md:text-4xl font-light text-gray-800">
                   I'm
                 </span>{" "}
@@ -38,7 +38,7 @@ const HomePage = () => {
                 </span>
               </h1>
 
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-700">
+              <h2 className="text-xl md:text-2xl font- text-gray-700">
                 <span>Web Designer & Developer Enthusiast</span>
               </h2>
             </div>
