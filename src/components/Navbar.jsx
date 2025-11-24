@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { navigation } from "../constant/data";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import { HiOutlineMenuAlt4, HiOutlineMinus } from "react-icons/hi";
 
 const Navbar = () => {
@@ -12,8 +12,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/30 backdrop-blur-md z-50 shadow">
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 w-full bg-white/30 backdrop-blur-md z-50">
+      <div className="max-w-7xl mx-auto px-4 pt-2 flex items-center justify-between">
         <Link
           to={"/"}
           onClick={() => setIsOpen(false)}
@@ -22,7 +22,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Logo"
-            className="w-24 h-24 md:h-32 md:w-32 rounded-full"
+            className="w-12 h-12 md:h-16 md:w-16 rounded-full"
           />
         </Link>
 
