@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white/30 backdrop-blur-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-white/30 backdrop-blur-lg z-50">
       <div className="max-w-7xl mx-auto px-4 pt-2 flex items-center justify-between">
         <Link
           to={"/"}
@@ -35,7 +35,7 @@ const Navbar = () => {
         </button>
 
         {isOpen && (
-          <div className="absolute top-20 right-0 w-60 h-80 bg-white/30 backdrop-blur-lg p-4 flex flex-col items-center space-y-4 shadow-md z-40 rounded-b-2xl">
+          <div className="absolute top-20 right-0 w-full h-80 bg-white p-4 flex flex-col items-center space-y-4 shadow-md z-40 rounded-b-2xl">
             {navigation.map((item) => (
               <NavLink
                 key={item.id}
