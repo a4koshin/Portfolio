@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import me from "../assets/me.png";
+import me from "../assets/me2.png";
 import Navbar from "../components/Navbar";
 import Kooshin from "../assets/kooshin.png";
 import Button from "../components/Button";
@@ -16,11 +16,11 @@ const HomePage = () => {
         <div className="mx-auto max-w-7xl px-4">
           <div className="mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col justify-center items-center gap-12">
             <div className="text-center max-w-2xl mx-auto">
-              <h1 className="text-2xl md:text-5xl font-bold mt-4">
+              <h1 className="text-2xl md:text-5xl font-semibold mt-4">
                 <span className="text-xl leading-loose md:leading-loose md:text-4xl font-light text-gray-800">
                   I'm
                 </span>{" "}
-                Abdirahman{" "}
+                <span className="text-gray-800"> Abdirahman </span>
                 <span className="relative inline-block text-blue-500">
                   Kooshin
                   <svg
@@ -44,12 +44,12 @@ const HomePage = () => {
             </div>
 
             <div className="z-10 inline-block relative">
-              <div className="absolute inset-0 bg-blue-500 rounded-full -z-10"></div>
+              <div className="absolute inset-0 bg-blue-500 -z-10 blur-[60px] opacity-20 transform scale-[2]"></div>
 
               <img
                 src={me}
                 alt="me"
-                className=" object-cover w-[40rem] h-[40rem]"
+                className="rounded-full object-cover w-[40rem] h-[40rem]"
               />
             </div>
           </div>
