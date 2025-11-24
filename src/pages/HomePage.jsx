@@ -154,6 +154,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
       <div className="mb-16 bg-blue-500 px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-xl font-bold text-white text-center mb-4 sm:text-2xl sm:mb-6 md:text-4xl">
