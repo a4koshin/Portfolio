@@ -14,7 +14,7 @@ const HomePage = () => {
     <>
       <div className="mb-32">
         <div className="mx-auto max-w-7xl px-4">
-          <div className="mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col md:flex-row justify-between items-center gap-12">
+          <div className="mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col justify-center items-center gap-12">
             <div className="text-center max-w-2xl mx-auto">
               <h1 className="text-2xl md:text-5xl font-bold mt-4">
                 <span className="text-xl leading-loose md:leading-loose md:text-4xl font-light text-gray-800">
@@ -38,18 +38,20 @@ const HomePage = () => {
                 </span>
               </h1>
 
-              <h2 className="mt-6 text-xl md:text-2xl font-semibold text-gray-700">
+              <h2 className="text-xl md:text-2xl font-semibold text-gray-700">
                 <span>Web Designer & Developer Enthusiast</span>
               </h2>
             </div>
 
-            {/* <div className=" z-10 inline-block">
+            <div className="z-10 inline-block relative">
+              <div className="absolute inset-0 bg-blue-500 rounded-full -z-10"></div>
+
               <img
                 src={me}
                 alt="me"
-                className="rounded-full md:ml-40 object-cover  "
+                className=" object-cover w-[40rem] h-[40rem]"
               />
-            </div> */}
+            </div>
           </div>
 
           {/* Tech Stack Section */}
