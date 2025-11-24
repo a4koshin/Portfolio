@@ -44,7 +44,7 @@ const HomePage = () => {
             </div>
 
             <div className="z-10 inline-block relative">
-              <div className="absolute inset-0 bg-blue-500 -z-10 blur-[60px] opacity-20 transform scale-[2]"></div>
+              <div className="absolute inset-0 bg-blue-500 rounded-full -z-10 blur-[120px] opacity-30 transform scale-110"></div>
 
               <img
                 src={me}
@@ -55,7 +55,7 @@ const HomePage = () => {
           </div>
 
           {/* Tech Stack Section */}
-          {/* <div className="mx-auto max-w-7xl mt-12 px-4 mb-16">
+          <div className="mx-auto max-w-7xl mt-12 px-4 mb-16">
             <h3 className="font-medium text-gray-500 text-center mt-10">
               Special Stacks
             </h3>
@@ -69,7 +69,7 @@ const HomePage = () => {
                 );
               })}
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
       {/* ABout section */}
