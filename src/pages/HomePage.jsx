@@ -107,16 +107,30 @@ const HomePage = () => {
           </div>
 
           {/* Tech Stack Section */}
-          <div className="mx-auto max-w-7xl mt-12 px-4 mb-16">
-            <h3 className="font-medium text-gray-500 text-center mt-10">
-              Special Stacks
-            </h3>
-            <div className="mt-6 flex flex-wrap gap-2 justify-center md:flex-row md:justify-center md:mx-auto max-w-7xl px-4 md:space-x-16 brightness-0 opacity-40">
+          <div className="mx-auto max-w-6xl mt-20 px-4 mb-20">
+            <div className="text-center mb-16">
+              <h3 className="font-medium text-gray-500 uppercase tracking-wider text-sm mb-4">
+                Tech Stack
+              </h3>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+                Built With Modern Tools
+              </h2>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12 max-w-4xl mx-auto">
               {techStack.map((tech) => {
                 const Icon = tech.icon;
                 return (
-                  <div key={tech.id} className="w-10 h-10 md:w-12 md:h-12">
-                    <Icon className="w-full h-full" />{" "}
+                  <div
+                    key={tech.id}
+                    className="group flex flex-col items-center transition-all duration-300"
+                  >
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md group-hover:shadow-blue-500/10 group-hover:border-blue-300/60 transition-all duration-300 flex items-center justify-center p-3">
+                      <Icon className="w-full h-full text-gray-600 group-hover:text-blue-500 transition-colors duration-300" />
+                    </div>
+                    <span className="mt-3 text-xs text-gray-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      {tech.name}
+                    </span>
                   </div>
                 );
               })}
