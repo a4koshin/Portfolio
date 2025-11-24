@@ -15,11 +15,11 @@ const HomePage = () => {
       <div className="mb-32">
         <div className="mx-auto max-w-7xl px-4">
           <div className="mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col md:flex-row justify-between items-center gap-12">
-            <div className="text-start md:text-left max-w-xl">
-              <span className="text-xl leading-loose md:leading-loose md:text-2xl font-light px-2 rounded-md text-gray-600 border-4 border-blue-500">
-                I'm
-              </span>
-              <h1 className="text-2xl md:text-3xl font-bold">
+            <div className="text-center max-w-2xl mx-auto">
+              <h1 className="text-2xl md:text-5xl font-bold mt-4">
+                <span className="text-xl leading-loose md:leading-loose md:text-4xl font-light text-gray-800">
+                  I'm
+                </span>{" "}
                 Abdirahman{" "}
                 <span className="relative inline-block text-blue-500">
                   Kooshin
@@ -38,42 +38,22 @@ const HomePage = () => {
                 </span>
               </h1>
 
-              <h2 className="mt-4 text-4xl md:text-6xl font-semibold text-gray-700">
-                <span>Web Designer</span> <span>& Developer Enthusiat</span>
+              <h2 className="mt-6 text-xl md:text-2xl font-semibold text-gray-700">
+                <span>Web Designer & Developer Enthusiast</span>
               </h2>
-
-              <p className="mt-6 text-lg text-gray-600">
-                Full-Stack Developer & UI/UX Designer building modern, scalable,
-                and user-friendly applications.
-              </p>
-
-              <div className="mt-6 flex flex-row sm:flex-row gap-4 justify-start md:justify-start">
-                <Link
-                  to="/projects"
-                  className="px-4 py-2 md:px-6 md:py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
-                >
-                  View My Work
-                </Link>
-                <Link
-                  to="/contact"
-                  className="px-4 py-2 md:px-6 md:py-3 border border-blue-500 text-blue-500 rounded-lg shadow hover:bg-blue-50 transition"
-                >
-                  Contact Me
-                </Link>
-              </div>
             </div>
 
-            <div className=" z-10 inline-block">
+            {/* <div className=" z-10 inline-block">
               <img
                 src={me}
                 alt="me"
                 className="rounded-full md:ml-40 object-cover  "
               />
-            </div>
+            </div> */}
           </div>
 
           {/* Tech Stack Section */}
-          <div className="mx-auto max-w-7xl mt-12 px-4 mb-16">
+          {/* <div className="mx-auto max-w-7xl mt-12 px-4 mb-16">
             <h3 className="font-medium text-gray-500 text-center mt-10">
               Special Stacks
             </h3>
@@ -87,7 +67,7 @@ const HomePage = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* ABout section */}

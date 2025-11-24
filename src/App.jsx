@@ -8,7 +8,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import Contact from "./pages/Contact";
 const App = () => {
   return (
-    <div className="min-h-screen pt-32 ">
+    <div className="min-h-screen pt-12 ">
       <Navbar />
 
       <Routes>
