@@ -43,38 +43,65 @@ const HomePage = () => {
               </h2>
             </div>
             <div className="z-10 inline-block relative">
-              <div className="absolute inset-0 bg-blue-500 rounded-full -z-10 blur-[120px] opacity-30 transform scale-110"></div>
+              <div className="absolute inset-0 bg-blue-500 rounded-full -z-10 blur-[90px] opacity-30 transform scale-110"></div>
 
               <img
                 src={me}
                 alt="me"
-                className="rounded-full object-cover w-[30rem] h-[30rem] md:w-[40rem] md:h-[40rem]"
+                className="object-cover w-[30rem] h-[30rem] md:w-[40rem] md:h-[40rem]"
               />
             </div>
-            <div className="md:absolute top-96 left-0 backdrop-blur-md border border-gray-300/60 rounded-3xl p-8 shadow-2xl shadow-gray-400/20 hover:shadow-gray-400/40 transition-all duration-500 bg-white/30">
-              <p className="text-lg text-gray-800 font-normal leading-relaxed tracking-wide">
-                <span className="text-blue-600 font-medium">
-                  Full-Stack Developer & UI/UX Designer
-                </span>{" "}
-                <br /> building modern, scalable & <br />
-                user-friendly applications.
-              </p>
+            <div className="w-full max-w-sm md:max-w-md md:absolute md:top-96 md:left-0 backdrop-blur-xl border border-gray-300/60 rounded-3xl p-8 shadow-2xl shadow-blue-400/10 hover:shadow-blue-400/20 transition-all duration-500 bg-gradient-to-br from-white/20 to-blue-50/30 hover:from-white/30 hover:to-blue-50/40 hover:-translate-y-1 hover:scale-105 group  ">
+              {/* Animated background elements */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-400/10 to-blue-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <div className="relative z-10">
+                <p className="text-lg md:text-xl text-gray-800 font-medium leading-relaxed tracking-wide text-center md:text-left">
+                  <span className="bg-blue-600 bg-clip-text text-transparent font-semibold">
+                    Full-Stack Developer & UI/UX Designer
+                  </span>{" "}
+                  <br className="hidden md:block" />
+                  <span className="text-gray-700">
+                    building modern, scalable &{" "}
+                    <br className="hidden md:block" />
+                    user-friendly applications.
+                  </span>
+                </p>
+
+                {/* Animated underline */}
+                <div className="mt-4 w-0 group-hover:w-16 h-0.5 bg-blue-500 transition-all duration-500 rounded-full mx-auto md:mx-0" />
+              </div>
             </div>
-            <div className="md:absolute top-96 -right-10 backdrop-blur-md border border-gray-300/60 rounded-3xl p-8 shadow-2xl shadow-gray-400/20 hover:shadow-gray-400/40 transition-all duration-500 bg-white/30">
-              <span>If you to look what i did before click buttons below</span>
-              <div className="mt-2 flex flex-row sm:flex-row gap-4 justify-start md:justify-start">
-                <Link
-                  to="/projects"
-                  className="px-2 py-0 md:px-6 md:py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
-                >
-                  View My Work
-                </Link>
-                <Link
-                  to="/contact"
-                  className="px-4 py-2 md:px-6 md:py-3 border border-blue-500 text-blue-500 rounded-lg shadow hover:bg-blue-50 transition"
-                >
-                  Contact Me
-                </Link>
+
+            <div className="w-full max-w-md md:absolute md:top-96 md:-right-10 backdrop-blur-xl border border-gray-300/60  rounded-3xl p-6 md:p-8 shadow-2xl shadow-blue-400/10 hover:shadow-blue-400/20 transition-all duration-500 bg-gradient-to-br from-white/20 to-blue-50/30 hover:from-white/30 hover:to-blue-50/40 hover:-translate-y-1 hover:scale-105 group mx-auto md:mx-0">
+              {/* Animated background elements */}
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-400/10 to-blue-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <div className="relative z-10">
+                <span className="text-sm md:text-base text-gray-700 font-medium tracking-wide text-center md:text-left block mb-4">
+                  Browse my previous work using the buttons below.
+                </span>
+
+                <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
+                  <Link
+                    to="/projects"
+                    className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl shadow-lg hover:shadow-blue-500/25 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-105 font-medium text-sm md:text-base text-center group/btn relative overflow-hidden"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300" />
+                    View My Work
+                  </Link>
+
+                  <Link
+                    to="/contact"
+                    className="px-6 py-3 border-2 border-blue-500/80 text-blue-600 rounded-xl shadow-lg hover:shadow-blue-400/20 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-105 font-medium text-sm md:text-base text-center group/btn relative overflow-hidden backdrop-blur-sm"
+                  >
+                    <div className="absolute inset-0 bg-blue-500 opacity-0 transition-all duration-300 -z-10" />
+                    <span className="relative z-10">Contact Me</span>
+                  </Link>
+                </div>
+
+                {/* Animated underline */}
+                <div className="mt-4 w-0 group-hover:w-20 h-0.5 bg-blue-500 transition-all duration-500 rounded-full mx-auto md:mx-0" />
               </div>
             </div>
           </div>
