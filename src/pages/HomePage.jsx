@@ -51,9 +51,9 @@ const HomePage = () => {
                 className="rounded-full object-cover w-[30rem] h-[30rem] md:w-[40rem] md:h-[40rem]"
               />
             </div>
-            <div className="absolute top-96 -left-20 -rotate-45 backdrop-blur-sm border border-white/25 rounded-3xl p-8 shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500">
+            <div className="absolute top-96 -left-20 -rotate-45 backdrop-blur-md border border-gray-300/60 rounded-3xl p-8 shadow-2xl shadow-gray-400/20 hover:shadow-gray-400/40 transition-all duration-500 bg-white/30">
               <p className="text-lg text-gray-800 font-normal leading-relaxed tracking-wide">
-                <span className="text-blue-500 font-medium">
+                <span className="text-blue-600 font-medium">
                   Full-Stack Developer & UI/UX Designer
                 </span>{" "}
                 <br /> building modern, scalable & <br />
