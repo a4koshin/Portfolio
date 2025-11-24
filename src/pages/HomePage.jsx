@@ -51,7 +51,7 @@ const HomePage = () => {
                 className="rounded-full object-cover w-[30rem] h-[30rem] md:w-[40rem] md:h-[40rem]"
               />
             </div>
-            <div className="absolute top-96 -left-20 -rotate-45 backdrop-blur-md border border-gray-300/60 rounded-3xl p-8 shadow-2xl shadow-gray-400/20 hover:shadow-gray-400/40 transition-all duration-500 bg-white/30">
+            <div className="md:absolute top-96 left-0 backdrop-blur-md border border-gray-300/60 rounded-3xl p-8 shadow-2xl shadow-gray-400/20 hover:shadow-gray-400/40 transition-all duration-500 bg-white/30">
               <p className="text-lg text-gray-800 font-normal leading-relaxed tracking-wide">
                 <span className="text-blue-600 font-medium">
                   Full-Stack Developer & UI/UX Designer
@@ -60,19 +60,22 @@ const HomePage = () => {
                 user-friendly applications.
               </p>
             </div>
-            <div className="mt-6 flex flex-row sm:flex-row gap-4 justify-start md:justify-start">
-              <Link
-                to="/projects"
-                className="px-4 py-2 md:px-6 md:py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
-              >
-                View My Work
-              </Link>
-              <Link
-                to="/contact"
-                className="px-4 py-2 md:px-6 md:py-3 border border-blue-500 text-blue-500 rounded-lg shadow hover:bg-blue-50 transition"
-              >
-                Contact Me
-              </Link>
+            <div className="md:absolute top-96 -right-10 backdrop-blur-md border border-gray-300/60 rounded-3xl p-8 shadow-2xl shadow-gray-400/20 hover:shadow-gray-400/40 transition-all duration-500 bg-white/30">
+              <span>If you to look what i did before click buttons below</span>
+              <div className="mt-2 flex flex-row sm:flex-row gap-4 justify-start md:justify-start">
+                <Link
+                  to="/projects"
+                  className="px-2 py-0 md:px-6 md:py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
+                >
+                  View My Work
+                </Link>
+                <Link
+                  to="/contact"
+                  className="px-4 py-2 md:px-6 md:py-3 border border-blue-500 text-blue-500 rounded-lg shadow hover:bg-blue-50 transition"
+                >
+                  Contact Me
+                </Link>
+              </div>
             </div>
           </div>
 
