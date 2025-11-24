@@ -14,7 +14,7 @@ const HomePage = () => {
     <>
       <div className="mb-32">
         <div className="mx-auto max-w-7xl px-4">
-          <div className="mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col justify-center items-center gap-12">
+          <div className="relative mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col justify-center items-center gap-12">
             <div className="text-center max-w-2xl mx-auto">
               <h1 className="text-2xl md:text-5xl font-semibold mt-4">
                 <span className="text-xl leading-loose md:leading-loose md:text-4xl font-light text-gray-800">
@@ -42,15 +42,37 @@ const HomePage = () => {
                 <span>Web Designer & Developer Enthusiast</span>
               </h2>
             </div>
-
             <div className="z-10 inline-block relative">
               <div className="absolute inset-0 bg-blue-500 rounded-full -z-10 blur-[120px] opacity-30 transform scale-110"></div>
 
               <img
                 src={me}
                 alt="me"
-                className="rounded-full object-cover w-[40rem] h-[40rem]"
+                className="rounded-full object-cover w-[30rem] h-[30rem] md:w-[40rem] md:h-[40rem]"
               />
+            </div>
+            <div className="absolute top-96 -left-20 -rotate-45 backdrop-blur-sm border border-white/25 rounded-3xl p-8 shadow-2xl shadow-black/5 hover:shadow-black/10 transition-all duration-500">
+              <p className="text-lg text-gray-800 font-normal leading-relaxed tracking-wide">
+                <span className="text-blue-500 font-medium">
+                  Full-Stack Developer & UI/UX Designer
+                </span>{" "}
+                <br /> building modern, scalable & <br />
+                user-friendly applications.
+              </p>
+            </div>
+            <div className="mt-6 flex flex-row sm:flex-row gap-4 justify-start md:justify-start">
+              <Link
+                to="/projects"
+                className="px-4 py-2 md:px-6 md:py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
+              >
+                View My Work
+              </Link>
+              <Link
+                to="/contact"
+                className="px-4 py-2 md:px-6 md:py-3 border border-blue-500 text-blue-500 rounded-lg shadow hover:bg-blue-50 transition"
+              >
+                Contact Me
+              </Link>
             </div>
           </div>
 

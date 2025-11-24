@@ -99,23 +99,3 @@ export const projectStack = [
     ],
   },
 ];
-
-// <div className="mt-6 flex flex-row sm:flex-row gap-4 justify-start md:justify-start">
-//               <Link
-//                 to="/projects"
-//                 className="px-4 py-2 md:px-6 md:py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
-//               >
-//                 View My Work
-//               </Link>
-//               <Link
-//                 to="/contact"
-//                 className="px-4 py-2 md:px-6 md:py-3 border border-blue-500 text-blue-500 rounded-lg shadow hover:bg-blue-50 transition"
-//               >
-//                 Contact Me
-//               </Link>
-//             </div>
-
-//  <p className="mt-6 text-lg text-gray-600">
-//               Full-Stack Developer & UI/UX Designer building modern, scalable,
-//               and user-friendly applications.
-//             </p>
