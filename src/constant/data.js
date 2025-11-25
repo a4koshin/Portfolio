@@ -20,7 +20,7 @@ import giovanco from "../assets/Giovanco.png";
 // Navigation
 export const navigation = [
   { id: 0, name: "Home", href: "/" },
-  { id: 1, name: "About me", href: "/about" },
+  { id: 1, name: "Me", href: "/about" },
   { id: 2, name: "Projects", href: "/projects" },
   { id: 3, name: "Contact", href: "/contact" },
 ];
