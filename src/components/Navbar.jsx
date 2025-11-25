@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { navigation } from "../constant/data";
 import logo from "../assets/logo.svg";
@@ -6,10 +6,28 @@ import { HiOutlineMenuAlt4, HiOutlineMinus } from "react-icons/hi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenuHandler = () => {
     setIsOpen(!isOpen);
   };
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/30 backdrop-blur-xl z-50">
@@ -19,23 +37,23 @@ const Navbar = () => {
           onClick={() => setIsOpen(false)}
           className="flex items-center"
         >
-          <img
-            src={logo}
-            alt="Logo"
-            className="w-12 h-12 md:h-12 md:w-12"
-          />
+          <img src={logo} alt="Logo" className="w-12 h-12 md:h-12 md:w-12" />
         </Link>
 
         <button className="relative z-50" onClick={toggleMenuHandler}>
           {isOpen ? (
-            <HiOutlineMinus className="size-8 text-gray-800 bg-gray-500/10 border border-gray-200 rounded-md px-2 py-2" />
+            <HiOutlineMinus className="size-8 text-gray-800 bg-gray-500/10 backdrop:blur-sm border border-gray-200 rounded-md px-2 py-2" />
           ) : (
-            <HiOutlineMenuAlt4 className="size-8 text-gray-800 bg-gray-500/10 border border-gray-200 rounded-md px-2 py-2" />
+            <HiOutlineMenuAlt4 className="size-8 text-gray-800 bg-gray-500/10 backdrop:blur-sm border border-gray-200 rounded-md px-2 py-2" />
           )}
         </button>
 
         {isOpen && (
-          <div className="absolute top-0 right-0 w-full h-80 md:w-80 md:h-80 bg-white p-4 flex flex-col items-center space-y-4 shadow-md z-40 rounded-b-2xl">
+          <div
+            ref={menuRef}
+            className="absolute top-0 right-0 md:right-24 md:top-20 w-full h-80 md:w-80 md:h-80 bg-white/20 backdrop-blur-md p-4 flex flex-col items-center space-y-4 shadow-lg z-40 rounded-b-2xl border border-white/30"
+            onClick={(e) => e.stopPropagation()}
+          >
             {navigation.map((item) => (
               <NavLink
                 key={item.id}
