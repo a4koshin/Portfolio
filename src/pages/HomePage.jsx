@@ -21,7 +21,7 @@ const HomePage = () => {
                   I'm
                 </span>{" "}
                 <span className="text-gray-800"> Abdirahman </span>
-                <span className="relative inline-block text-blue-500">
+                <span className="relative inline-block text-[#007bff]">
                   Kooshin
                   <svg
                     className="absolute -bottom-1 left-0 w-full h-2"
@@ -43,7 +43,7 @@ const HomePage = () => {
               </h2>
             </div>
             <div className="z-10 inline-block relative">
-              <div className="absolute inset-0 bg-blue-500 rounded-full -z-10 blur-[90px] opacity-30 transform scale-110"></div>
+              <div className="absolute inset-0 bg-[#007bff] rounded-full -z-10 blur-[90px] opacity-30 transform scale-110"></div>
 
               <img
                 src={me}
@@ -57,7 +57,7 @@ const HomePage = () => {
 
               <div className="relative z-10">
                 <p className="text-lg md:text-xl text-gray-800 font-medium leading-relaxed tracking-wide text-center md:text-left">
-                  <span className="bg-blue-600 bg-clip-text text-transparent font-semibold">
+                  <span className="bg-[#007bff] bg-clip-text text-transparent font-semibold">
                     Full-Stack Developer & UI/UX Designer
                   </span>{" "}
                   <br className="hidden md:block" />
@@ -69,7 +69,7 @@ const HomePage = () => {
                 </p>
 
                 {/* Animated underline */}
-                <div className="mt-4 w-0 group-hover:w-16 h-0.5 bg-blue-500 transition-all duration-500 rounded-full mx-auto md:mx-0" />
+                <div className="mt-4 w-0 group-hover:w-16 h-0.5 bg-[#007bff] transition-all duration-500 rounded-full mx-auto md:mx-0" />
               </div>
             </div>
 
@@ -85,7 +85,7 @@ const HomePage = () => {
                 <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
                   <Link
                     to="/projects"
-                    className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl shadow-lg hover:shadow-blue-500/25 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-105 font-medium text-sm md:text-base text-center group/btn relative overflow-hidden"
+                    className="px-6 py-3 bg-gradient-to-r from-[#007bff] to-blue-600 text-white rounded-xl shadow-lg hover:shadow-#007bff/25 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-105 font-medium text-sm md:text-base text-center group/btn relative overflow-hidden"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300" />
                     View My Work
@@ -93,15 +93,15 @@ const HomePage = () => {
 
                   <Link
                     to="/contact"
-                    className="px-6 py-3 border-2 border-blue-500/80 text-blue-600 rounded-xl shadow-lg hover:shadow-blue-400/20 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-105 font-medium text-sm md:text-base text-center group/btn relative overflow-hidden backdrop-blur-sm"
+                    className="px-6 py-3 border-2 border-#007bff/80 text-blue-600 rounded-xl shadow-lg hover:shadow-blue-400/20 hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 transform hover:-translate-y-0.5 hover:scale-105 font-medium text-sm md:text-base text-center group/btn relative overflow-hidden backdrop-blur-sm"
                   >
-                    <div className="absolute inset-0 bg-blue-500 opacity-0 transition-all duration-300 -z-10" />
+                    <div className="absolute inset-0 bg-#007bff opacity-0 transition-all duration-300 -z-10" />
                     <span className="relative z-10">Contact Me</span>
                   </Link>
                 </div>
 
                 {/* Animated underline */}
-                <div className="mt-4 w-0 group-hover:w-20 h-0.5 bg-blue-500 transition-all duration-500 rounded-full mx-auto md:mx-0" />
+                <div className="mt-4 w-0 group-hover:w-20 h-0.5 bg-[#007bff] transition-all duration-500 rounded-full mx-auto md:mx-0" />
               </div>
             </div>
           </div>
@@ -125,8 +125,8 @@ const HomePage = () => {
                     key={tech.id}
                     className="group flex flex-col items-center transition-all duration-300"
                   >
-                    <div className="w-14 h-14 md:w-16 md:h-16 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md group-hover:shadow-blue-500/10 group-hover:border-blue-300/60 transition-all duration-300 flex items-center justify-center p-3">
-                      <Icon className="w-full h-full text-gray-600 group-hover:text-blue-500 transition-colors duration-300" />
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md group-hover:shadow-[#007bff]/10 group-hover:border-blue-300/60 transition-all duration-300 flex items-center justify-center p-3">
+                      <Icon className="w-full h-full text-gray-600 group-hover:text-[#007bff] transition-colors duration-300" />
                     </div>
                     <span className="mt-3 text-xs text-gray-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       {tech.name}
@@ -141,7 +141,7 @@ const HomePage = () => {
       {/* ABout section */}
       <div className="mb-24">
         <div className="mx-auto max-w-7xl px-4">
-          <h3 className="font-meduim text-center mb-12 text-blue-500">
+          <h3 className="font-meduim text-center mb-12 text-[#007bff]">
             About me
           </h3>
           <div className="mt-12 flex flex-col md:flex-row md:space-x-10 justify-around items-start gap-12">
@@ -155,7 +155,7 @@ const HomePage = () => {
             </div>
 
             <div className=" mt-0 md:mt-24">
-              <h3 className="relative inline-block font-semibold text-3xl md:text-5xl  text-start mb-6 text-blue-500">
+              <h3 className="relative inline-block font-semibold text-3xl md:text-5xl  text-start mb-6 text-[#007bff]">
                 Who I Am
                 <svg
                   className="absolute -bottom-1 left-0 w-full h-2"
@@ -192,7 +192,7 @@ const HomePage = () => {
       {/* Some projects */}
       <div className=" mb-36">
         <div className="mx-auto max-w-7xl px-4">
-          <h3 className="font-meduim text-center mb-12 text-blue-500">
+          <h3 className="font-meduim text-center mb-12 text-[#007bff]">
             Projects
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
@@ -203,7 +203,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="mb-16 bg-blue-500 px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+      <div className="mb-16 bg-[#007bff] px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="text-xl font-bold text-white text-center mb-4 sm:text-2xl sm:mb-6 md:text-4xl">
             Like what you see? Let's work together!
