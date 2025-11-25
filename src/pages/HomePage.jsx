@@ -17,7 +17,7 @@ const HomePage = () => {
           <div className="relative mx-auto max-w-7xl mt-4 md:mt-16 px-4 flex flex-col justify-center items-center gap-12">
             <div className="text-center max-w-2xl mx-auto">
               <h1 className="text-2xl md:text-5xl font-bold mt-4">
-                <span className="text-xl leading-loose md:leading-loose md:text-4xl font-light text-gray-800">
+                <span className="text-xl leading-loose md:leading-loose md:text-5xl font-light text-gray-800">
                   I'm
                 </span>{" "}
                 <span className="text-gray-800"> Abdirahman </span>
