@@ -29,7 +29,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-4 right-4 md:right-[160px] flex justify-between items-center w-auto bg-white/10 backdrop-blur-md border border-gray-200 rounded-full z-50 px-6 py-1">
+    <nav className="fixed top-4 right-4 md:right-[160px] flex justify-between items-center w-auto bg-white/30 backdrop-blur-md border border-gray-200 rounded-full z-50 px-6 py-1">
       <div className="flex items-center justify-between w-full gap-8">
         <Link
           to={"/"}
@@ -50,7 +50,7 @@ const Navbar = () => {
       {isOpen && (
         <div
           ref={menuRef}
-          className="absolute top-full right-4 mt-4 w-80 h-auto  bg-white/30 backdrop-blur-md p-4 flex flex-col items-center space-y-4 shadow-lg z-40 rounded-2xl border border-white/30"
+          className="absolute top-12 right-[0px] mt-4 w-40 h-auto py-2 bg-white backdrop-blur-md p-4 flex flex-col items-center space-y-4 shadow-lg z-40 rounded-2xl border border-white/30"
           onClick={(e) => e.stopPropagation()}
         >
           {navigation.map((item) => (
