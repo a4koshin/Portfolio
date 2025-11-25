@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
-    <div className="min-h-screen pt-12 ">
+    <div className="min-h-screen pt-24 ">
       <ScrollToTop />
       <Navbar />
 
