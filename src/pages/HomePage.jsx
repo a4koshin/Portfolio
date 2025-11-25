@@ -73,7 +73,7 @@ const HomePage = () => {
               </div>
             </div>
 
-            <div className="w-full max-w-md md:absolute md:top-96 md:right-0 backdrop-blur-xl border border-gray-300/60  rounded-3xl p-6 md:p-8 shadow-2xl shadow-blue-400/10 hover:shadow-blue-400/20 transition-all duration-500 bg-gradient-to-br from-white/20 to-blue-50/30 hover:from-white/30 hover:to-blue-50/40 hover:-translate-y-1 hover:scale-105 group mx-auto md:mx-0">
+            <div className="w-full max-w-md md:absolute md:top-96 md:-right-10 backdrop-blur-xl border border-gray-300/60  rounded-3xl p-6 md:p-8 shadow-2xl shadow-blue-400/10 hover:shadow-blue-400/20 transition-all duration-500 bg-gradient-to-br from-white/20 to-blue-50/30 hover:from-white/30 hover:to-blue-50/40 hover:-translate-y-1 hover:scale-105 group mx-auto md:mx-0">
               {/* Animated background elements */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-blue-400/10 to-blue-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
