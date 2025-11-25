@@ -6,9 +6,11 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
     <div className="min-h-screen pt-12 ">
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
