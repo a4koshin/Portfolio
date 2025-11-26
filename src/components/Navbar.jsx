@@ -29,7 +29,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-4 right-4 md:right-[310px] flex justify-between items-center w-auto bg-white/30 backdrop-blur-md border border-gray-200 rounded-full z-50 px-6 py-1">
+    <nav className="fixed top-4 right-4 md:right-[312px] flex justify-between items-center w-auto bg-white/30 backdrop-blur-md border border-gray-200 rounded-full z-50 px-6 py-1">
       <div className="flex items-center justify-between w-full gap-8">
         <Link
           to={"/"}
