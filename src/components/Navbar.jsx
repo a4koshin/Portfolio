@@ -29,14 +29,14 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-4 right-4 md:right-[160px] flex justify-between items-center w-auto bg-white/30 backdrop-blur-md border border-gray-200 rounded-full z-50 px-6 py-1">
+    <nav className="fixed top-4 right-4 md:right-[310px] flex justify-between items-center w-auto bg-white/30 backdrop-blur-md border border-gray-200 rounded-full z-50 px-6 py-1">
       <div className="flex items-center justify-between w-full gap-8">
         <Link
           to={"/"}
           onClick={() => setIsOpen(false)}
-          className="flex items-center"
+          className="flex items-center relative"
         >
-          <img src={logo} alt="Logo" className="w-12 h-12 md:h-12 md:w-12" />
+          <img src={logo} alt="Logo" className="w-9 h-9 " />
         </Link>
         <button className="relative z-50" onClick={toggleMenuHandler}>
           {isOpen ? (
